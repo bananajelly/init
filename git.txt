@@ -1,0 +1,24 @@
+https://git-scm.com/book/en/v2
+
+=== Basics
+git config --list --show-origin
+git config --global user.name "John Doe"
+git config --global user.email johndoe@example.com
+
+=== Generating a new SSH key
+= Links
+https://help.github.com/en/enterprise/2.17/user/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
+= Commands
+ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+
+=== Remote
+= Links
+https://help.github.com/en/github/using-git/changing-a-remotes-url
+= Commands
+git remote -v
+git remote add origin https://github.com/USERNAME/REPOSITORY.git
+git remote git@github.com:USERNAME/REPOSITORY.git
+
+=== Windows Credential Manager
+https://dev.to/configcat/lazy-man-s-guide-multiple-github-https-accounts-on-windows-2mad
+
