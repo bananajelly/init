@@ -1,0 +1,10 @@
+By default, Maven local repository is defaulted to ${user.home}/.m2/repository folder :
+
+    Unix/Mac OS X – ~/.m2/repository
+    Windows – C:\Users\{your-username}\.m2\repository
+
+When we compile a Maven project, Maven will download all the project’s dependency and plugin jars into the Maven local repository, save time for next compilation.
+
+If the default .m2 is unable to find, maybe someone changed the default path. Issue the following command to find out where is the Maven local repository:
+
+mvn help:evaluate -Dexpression=settings.localRepository
